@@ -36,7 +36,7 @@ const Hero = () => {
                   href={`tel:${phone}`}
                   title={`Call to ${name} with number ${phone}`}
                   target='_blank'
-                  rel='noopener noreferreer'
+                  rel="noreferrer"
                 >
                   <PhoneIcon></PhoneIcon>
                 </a>
@@ -46,7 +46,7 @@ const Hero = () => {
                 href={`mailto:${email}`}
                 title={`Send an email to ${name} to ${email}`}
                 target='_blank'
-                rel='noopener noreferreer'
+                rel="noreferrer"
               >                
                 <MailIcon/>
               </a>
@@ -60,7 +60,7 @@ const Hero = () => {
                     href={url}
                     title={`Visit profile of ${username} in ${email}`}
                     target='_blank'
-                    rel='noopener noreferreer'
+                    rel="noreferrer"
                   >                
                     <Icon/>
                   </a>
