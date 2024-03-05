@@ -1,0 +1,17 @@
+.skills-ul {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.skills-li {
+    align-items: center;
+    background-color: #eee;
+    border-radius: 6px;
+    color: black;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 4px;
+    padding: 0.2rem 0.6rem;
+}

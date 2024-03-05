@@ -1,0 +1,43 @@
+.experience-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.experience--h3 {
+    margin: 0;
+    color: #111;
+}
+
+.experience--h4 {
+    color: #222;
+    font-weight: 400;
+    margin: 0;
+}
+
+.experience--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.experience--header a {
+    color: #111;
+}
+
+.experience--header a:hover {
+    text-decoration: underline;
+}
+
+.experience--time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+
+}
+
+@media (width <= 700px) {
+    .experience--time {
+      text-align: right;
+    }
+  }

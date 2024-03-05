@@ -1,0 +1,139 @@
+{
+    "basics": {
+      "name": "Miriam Abella",
+      "label": "Full STack Developer",
+      "image": "me.webp",
+      "email": "miriam.abella211@gmail.com",
+      "phone": "+41 000000000",
+      "url": "miriamabella.dev",
+      "summary": "With three years of hands-on experience in full-stack development, I've been diving deep into creating user-friendly and efficient web applications that could scale.",
+      "location": {
+        "address": "",
+        "postalCode": "8600",
+        "city": "Dubendorf",
+        "countryCode": "CH",
+        "region": "Zurich"
+      },
+      "profiles": [{
+        "network": "LinkedIn",
+        "username": "miriamabella",
+        "url": "https://www.linkedin.com/in/miriamabella/"
+      }]
+    },
+    "work": [{
+      "id": 2,
+      "name": "Lifull Connect",
+      "position": "Full Stack Developer",
+      "url": "https://www.lifullconnect.com/",
+      "startDate": "2020-01-01",
+      "endDate": "2023-07-30",
+      "summary": "My role as a Full Stack Developer involved contributing to the development of a real estate website",
+      "highlights": [
+        "Reactjs",
+        "PHP",
+        "Symfony",
+        "PHPUnit, Jest",
+        "GraphQL",
+        "Git, GitHub",
+        "Docker",
+        "Jira",
+        "Figma"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Seidor",
+      "position": "Unity Developer",
+      "url": "https://www.seidor.com/",
+      "startDate": "2017-02-01",
+      "endDate": "2018-02-28",
+      "summary": "My primary responsibility entailed the development of the VR application canvas, ensuring its seamless integration and functionality within the virtual environment.",
+      "highlights": [
+        "Unity",
+        "C#",
+        "Canvas Design",
+        "After Effects"
+      ]
+    }
+  ],
+    "education": [
+      {
+        "institution": "University of Vic",
+        "url": "https://institution.com/",
+        "area": "Media",
+        "studyType": "Bachelor",
+        "startDate": "2010-09-01",
+        "endDate": "2015-06-01"
+      },
+      {
+      "institution": "University of Vic",
+      "url": "https://institution.com/",
+      "area": "Media",
+      "studyType": "Bachelor",
+      "startDate": "2010-09-01",
+      "endDate": "2015-06-01"
+    }],
+    "skills": [
+      {
+        "name": "Reactjs",
+        "keywords": [
+          "Web development", "Frontend", "JavaScript Library", "UI"
+        ]
+      },
+      {
+        "name": "HTML",
+        "keywords": [
+          "Web development", "Frontend"
+        ]
+      },
+      {
+        "name": "CSS",
+        "keywords": [
+          "Web development", "Frontend", "Diseño Responsive"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "keywords": [
+          "Web development", "Frontend", "Backend", "Fullstack"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "keywords": [
+          "Bases de Datos", "SQL", "Database", "Backend"
+        ]
+      },
+      {
+        "name": "Git",
+        "keywords": [
+          "Version control", "Colaboración", "Source code"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "keywords": [
+          "Version control", "Collaboration", "Source code", "Git"
+        ]
+      },
+      {
+        "name": "GraphQL",
+        "keywords": [
+         
+        ]
+      }
+      ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "Catalan",
+        "fluency": "Native Speaker"
+      },
+      {
+        "language": "English",
+        "fluency": "Professional"
+    }]
+  }
