@@ -1,0 +1,11 @@
+.app {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+}
+
+@media (width <= 700px) {
+    .app {
+      padding: 2rem;
+    }
+  }

@@ -1,0 +1,29 @@
+.edu--ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .edu--h3 {
+    color: #111;
+    margin: 0;
+  }
+
+  .edu--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  .edu--time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+  }
+
+  @media (width <= 700px) {
+    .edu--time {
+      text-align: right;
+    }
+  }

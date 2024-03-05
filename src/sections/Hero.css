@@ -40,10 +40,10 @@
 
 .hero--footer {
     color: #555;
+    font-size: 0.65rem;
     display: flex;
     gap: 4px;
     margin-top: 8px;
-    font-size: 0.65rem;
 }
 
 .hero--footer a{
@@ -86,5 +86,4 @@
     .title-hero--secondary {
       text-wrap: balance;
     }
-
 }

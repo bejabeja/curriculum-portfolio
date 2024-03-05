@@ -34,3 +34,21 @@ p {
   margin: 0;
   text-wrap: pretty;
 }
+
+.print {
+  display: none !important;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print {
+    display: block !important;
+  }
+
+  article {
+    break-inside: avoid;
+  }
+}

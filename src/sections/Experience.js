@@ -6,7 +6,7 @@ import './Experience.css'
 const Experience = () => {
   const work = cv.work
   return (
-    <Section title="Experiencia laboral">
+    <Section title="Work Experience">
       <ul className='experience-ul'>
         {
           work.map(

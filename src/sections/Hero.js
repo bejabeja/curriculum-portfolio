@@ -14,6 +14,9 @@ const Hero = () => {
     LinkedIn
   }
 
+  const linkedInInfo = profiles.find(({network}) => network === 'LinkedIn')
+  const linkedInUrl = linkedInInfo?.url
+
   return (
     <Section>
       <div className='container'>
@@ -24,7 +27,10 @@ const Hero = () => {
             <WorldMap></WorldMap>
             {city}, {region}
           </span>          
-          <footer className='hero--footer'>
+          <footer className='hero--footer print'>
+            {email} ~ {phone} ~ {linkedInUrl}
+          </footer>
+          <footer className='hero--footer no-print'>
             {phone && (
                 <a
                   href={`tel:${phone}`}

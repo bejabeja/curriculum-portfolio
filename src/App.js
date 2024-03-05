@@ -3,21 +3,19 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Education from './sections/Education'
 import Skills from './sections/Skills'
-import Projects from './sections/Projects'
-import Experience from './sections/Experience';
-
+import Experience from './sections/Experience'
+import './App.css'
 
 
 function App() {
   return (
-    <>
+    <main className='app'>
       <Hero></Hero>
       <About></About>
       <Experience></Experience>
-      {/* <Education></Education> */}
+      <Education></Education>
       <Skills></Skills>
-      {/* <Projects></Projects> */}
-    </>
+    </main>
   );
 }
 

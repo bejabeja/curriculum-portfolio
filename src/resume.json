@@ -4,7 +4,7 @@
       "label": "Full STack Developer",
       "image": "me.webp",
       "email": "miriam.abella211@gmail.com",
-      "phone": "+41 000000000",
+      "phone": "+41 77 285 68 26",
       "url": "miriamabella.dev",
       "summary": "With three years of hands-on experience in full-stack development, I've been diving deep into creating user-friendly and efficient web applications that could scale.",
       "location": {
@@ -58,21 +58,30 @@
   ],
     "education": [
       {
-        "institution": "University of Vic",
-        "url": "https://institution.com/",
-        "area": "Media",
-        "studyType": "Bachelor",
-        "startDate": "2010-09-01",
-        "endDate": "2015-06-01"
+        "institution": "Fundacio Esplai",
+        "url": "https://fundacionesplai.org/",
+        "area": "Web Programming",
+        "studyType": "Bootcamp",
+        "startDate": "2019-10-01",
+        "endDate": "2019-12-25"
       },
       {
-      "institution": "University of Vic",
-      "url": "https://institution.com/",
-      "area": "Media",
-      "studyType": "Bachelor",
-      "startDate": "2010-09-01",
-      "endDate": "2015-06-01"
-    }],
+        "institution": "TEKNOS",
+        "url": "https://mon.uvic.cat/teknos/",
+        "area": "3D Animations and Interactive Web",
+        "studyType": "Higher Technical Certificate",
+        "startDate": "2015-09-01",
+        "endDate": "2017-06-01"
+      },
+      {
+        "institution": "University of Vic",
+        "url": "https://www.uvic.cat/es",
+        "area": "Audiovisual Communication",
+        "studyType": "Bachelor Degree",
+        "startDate": "2010-09-01",
+        "endDate": "2015-06-01"
+      }
+    ],
     "skills": [
       {
         "name": "Reactjs",
