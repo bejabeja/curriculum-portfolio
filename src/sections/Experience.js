@@ -22,7 +22,7 @@ const Experience = () => {
                     <header className='experience--header'>
                       <div>
                         <h3 className='experience--h3'>
-                          <a href={url} title={`Ver ${name}`} target="_blank">
+                          <a href={url} title={`Ver ${name}`} target="_blank" rel="noreferrer">
                             {name}
                           </a>
                         </h3>
