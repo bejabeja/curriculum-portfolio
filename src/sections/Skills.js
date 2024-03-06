@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <Section title='Skills'> 
       <ul className='skills-ul'>
-        {skills.map(({name})=> (
+        {skills?.map(({name})=> (
           <li className='skills-li'>
             {name}
           </li>

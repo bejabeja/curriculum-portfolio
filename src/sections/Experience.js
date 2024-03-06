@@ -9,7 +9,7 @@ const Experience = () => {
     <Section title="Work Experience">
       <ul className='experience-ul'>
         {
-          work.map(
+          work?.map(
             ({ name, startDate, endDate, position, summary, url }) => {
               const startYear = new Date(startDate).getFullYear()
               const endYear =

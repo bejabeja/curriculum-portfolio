@@ -11,7 +11,7 @@ const Education = () => {
     <Section title='Education'>
         <ul className='edu--ul'>
           {
-            education.map(({ institution, studyType, startDate, endDate, area }) => {
+            education?.map(({ institution, studyType, startDate, endDate, area }) => {
               const startYear = new Date(startDate).getFullYear()
               const endYear =
                 endDate != null ? new Date(endDate).getFullYear() : "Actual"

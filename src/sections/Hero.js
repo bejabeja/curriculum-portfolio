@@ -1,3 +1,4 @@
+import React from 'react'
 import cv from '../resume.json'
 import './Hero.css'
 import Section from '../components/Section'
@@ -7,44 +8,46 @@ import PhoneIcon from '../assets/icons/PhoneIcon'
 import WorldMap from '../assets/icons/WorldMapIcon'
 
 const Hero = () => {
-  const { name, label, image, location, profiles, phone, email } = cv.basics
-  const { city, region} = location
+  const basics = cv.basics
+  const profiles = cv.basics.profiles
+  const location = cv.basics.location
 
+  console.log(profiles ?? 'Hello')
   const SOCIAL_ICONS = {
     LinkedIn
   }
 
-  const linkedInInfo = profiles.find(({network}) => network === 'LinkedIn')
+  const linkedInInfo = profiles?.find(({network}) => network === 'LinkedIn')
   const linkedInUrl = linkedInInfo?.url
 
   return (
     <Section>
       <div className='container'>
         <div className='info'>
-          <h1 className='title-hero--main'>{name}</h1>
-          <h2 className='title-hero--secondary'>{label}</h2>
+          <h1 className='title-hero--main'>{basics.name}</h1>
+          <h2 className='title-hero--secondary'>{basics.label}</h2>
           <span className='hero--span'>
             <WorldMap></WorldMap>
-            {city}, {region}
+            {location.city}, {location.region}
           </span>          
           <footer className='hero--footer print'>
-            {email} ~ {phone} ~ {linkedInUrl}
+            {basics.email} ~ {basics.phone} ~ {linkedInUrl}
           </footer>
           <footer className='hero--footer no-print'>
-            {phone && (
+            {basics.phone && (
                 <a
-                  href={`tel:${phone}`}
-                  title={`Call to ${name} with number ${phone}`}
+                  href={`tel:${basics.phone}`}
+                  title={`Call to ${basics.name} with number ${basics.phone}`}
                   target='_blank'
                   rel="noreferrer"
                 >
                   <PhoneIcon></PhoneIcon>
                 </a>
             )}
-            {email && (
+            {basics.email && (
               <a
-                href={`mailto:${email}`}
-                title={`Send an email to ${name} to ${email}`}
+                href={`mailto:${basics.email}`}
+                title={`Send an email to ${basics.name} to ${basics.email}`}
                 target='_blank'
                 rel="noreferrer"
               >                
@@ -52,13 +55,13 @@ const Hero = () => {
               </a>
             )}
             {
-              profiles.map(({id, network, url, username}) => {
+              profiles?.map(({id, network, url, username}) => {
                 const Icon = SOCIAL_ICONS[network]
                 return (
                   <a
                     key={id}
                     href={url}
-                    title={`Visit profile of ${username} in ${email}`}
+                    title={`Visit profile of ${username} in ${url}`}
                     target='_blank'
                     rel="noreferrer"
                   >                
@@ -70,7 +73,7 @@ const Hero = () => {
           </footer>
         </div>
         <figure>
-          <img src={image} alt={name} className='hero-img'></img>
+          <img src={basics.image} alt={basics.name} className='hero-img'></img>
         </figure>
       </div>
     </Section>
