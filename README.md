@@ -19,5 +19,4 @@ This web curriculum is designed with a format that is also suitable for printing
 Preview:
 www.mabella.dev
 
-Design based in:
-https://cv.jarocki.me/
+Design based in: cv.jarocki.me

@@ -10,7 +10,7 @@
       "location": {
         "address": "",
         "postalCode": "8600",
-        "city": "Dubendorf",
+        "city": "Dübendorf",
         "countryCode": "CH",
         "region": "Zurich"
       },
@@ -106,6 +106,19 @@
         "keywords": [
           "Web development", "Frontend", "Backend", "Fullstack"
         ]
+      }
+      ,
+      {
+        "name": "Node",
+        "keywords": [
+          "Web development", "Backend", "Fullstack", "Server-side JavaScript"
+        ]
+      },
+      {
+        "name": "PHP",
+        "keywords": [
+          "Web development", "Backend", "Fullstack",  "Server-side scripting"
+        ]
       },
       {
         "name": "MySQL",
@@ -128,7 +141,7 @@
       {
         "name": "GraphQL",
         "keywords": [
-         
+          "API development", "Query language", "Schema definition"
         ]
       }
       ],
