@@ -5,6 +5,7 @@ import Education from './sections/Education'
 import Skills from './sections/Skills'
 import Experience from './sections/Experience'
 import './App.css'
+import Languages from './sections/Languages';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Experience></Experience>
       <Education></Education>
       <Skills></Skills>
+      <Languages></Languages>
     </main>
   );
 }
