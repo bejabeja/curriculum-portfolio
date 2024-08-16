@@ -6,6 +6,7 @@ import LinkedIn from '../assets/icons/LinkedInIcon'
 import MailIcon from '../assets/icons/MailIcon'
 import PhoneIcon from '../assets/icons/PhoneIcon'
 import WorldMap from '../assets/icons/WorldMapIcon'
+import DownloadIcon from '../assets/icons/DownloadIcon'
 
 const Hero = () => {
   const basics = cv.basics
@@ -17,7 +18,7 @@ const Hero = () => {
     LinkedIn
   }
 
-  const linkedInInfo = profiles?.find(({network}) => network === 'LinkedIn')
+  const linkedInInfo = profiles?.find(({ network }) => network === 'LinkedIn')
   const linkedInUrl = linkedInInfo?.url
 
   return (
@@ -29,20 +30,20 @@ const Hero = () => {
           <span className='hero--span'>
             <WorldMap></WorldMap>
             {location.city}, {location.region}
-          </span>          
+          </span>
           <footer className='hero--footer print'>
             {basics.email} ~ {basics.phone} ~ {linkedInUrl}
           </footer>
           <footer className='hero--footer no-print'>
             {basics.phone && (
-                <a
-                  href={`tel:${basics.phone}`}
-                  title={`Call to ${basics.name} with number ${basics.phone}`}
-                  target='_blank'
-                  rel="noreferrer"
-                >
-                  <PhoneIcon></PhoneIcon>
-                </a>
+              <a
+                href={`tel:${basics.phone}`}
+                title={`Call to ${basics.name} with number ${basics.phone}`}
+                target='_blank'
+                rel="noreferrer"
+              >
+                <PhoneIcon></PhoneIcon>
+              </a>
             )}
             {basics.email && (
               <a
@@ -50,12 +51,12 @@ const Hero = () => {
                 title={`Send an email to ${basics.name} to ${basics.email}`}
                 target='_blank'
                 rel="noreferrer"
-              >                
-                <MailIcon/>
+              >
+                <MailIcon />
               </a>
             )}
             {
-              profiles?.map(({id, network, url, username}) => {
+              profiles?.map(({ id, network, url, username }) => {
                 const Icon = SOCIAL_ICONS[network]
                 return (
                   <a
@@ -64,12 +65,22 @@ const Hero = () => {
                     title={`Visit profile of ${username} in ${url}`}
                     target='_blank'
                     rel="noreferrer"
-                  >                
-                    <Icon/>
+                  >
+                    <Icon />
                   </a>
                 )
               })
             }
+
+            <a
+              href="/resumeMabella.pdf"
+              title="Download my resume"
+              download
+              className="resume-download-link"
+              content
+            >
+              <DownloadIcon />
+            </a>
           </footer>
         </div>
         <figure>
