@@ -36,8 +36,13 @@
 
 }
 
-@media (width <= 700px) {
+.experience--summary-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media (width <=700px) {
     .experience--time {
-      text-align: right;
+        text-align: right;
     }
-  }
+}

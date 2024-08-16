@@ -4,12 +4,12 @@ import cv from '../resume.json'
 
 const About = () => {
   const { summary } = cv.basics
-  
+
   return (
-    <Section title='About'>
-        <p>
-          {summary}
-        </p>
+    <Section title='About' >
+      <p className='paragraph-style' >
+        {summary}
+      </p>
     </Section>
   )
 }

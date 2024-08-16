@@ -30,7 +30,17 @@
       "url": "https://www.lifullconnect.com/",
       "startDate": "2020-01-01",
       "endDate": "2023-07-30",
-      "summary": "My role as a Full Stack Developer involved contributing to the development of a real estate website.",
+      "summary": [
+        "Developed the company's real estate websites. Styled and programmed frontend features.",
+        "Designed and implemented backend features.",
+        "Created RESTful APIs.",
+        "Managed databases.",
+        "Ensured all features were covered by tests.",
+        "Programming tools: React JS, CSS, PHP, SQL, RoR.",
+        "Testing tools: Jest, PHPUnit, RSpec.",
+        "Applied Agile methodology: participated in sprint planning, daily, stand-ups, and retrospective meetings.",
+        "Practiced TDD, testing strategies, hexagonal architecture, refactoring, pair programming, and clean code."
+      ],
       "highlights": [
         "Reactjs",
         "PHP",
@@ -50,7 +60,15 @@
       "url": "https://www.seidor.com/",
       "startDate": "2017-02-01",
       "endDate": "2018-02-28",
-      "summary": "My primary responsibility entailed the development of the VR application canvas, ensuring its seamless integration and functionality within the virtual environment.",
+      "summary": [
+        "My primary responsibility entailed the development of the VR application canvas, ensuring its seamless integration and functionality within the virtual environment.",
+        "Developed Unity 3D applications in C#.",
+        "Designed and implemented Canvas UI.",
+        "Programmed UI interactions.",
+        "Conducted manual testing of VR apps.",
+        "Reported and documented bugs.",
+        "Quickly understood and adapted to new tools and frameworks, demonstrating strong learning ability."
+      ],
       "highlights": [
         "Unity",
         "C#",

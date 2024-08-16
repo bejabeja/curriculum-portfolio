@@ -15,7 +15,7 @@ const Experience = () => {
               const endYear =
                 endDate != null ? new Date(endDate).getFullYear() : "Actual"
               const years = `${startYear} - ${endYear}`
-    
+
               return (
                 <li className='experience--li'>
                   <article>
@@ -28,12 +28,21 @@ const Experience = () => {
                         </h3>
                         <h4 className='experience--h4'>{position}</h4>
                       </div>
-    
+
                       <time className='experience--time'>{years}</time>
                     </header>
-    
-                    <footer>
-                      <p>{summary}</p>
+
+                    <footer className='experience--summary-list'>
+
+                      {
+                        summary.map((item, index) => (
+                          <li key={index}>
+                            <footer>
+                              <p className='paragraph-style'>{item}</p>
+                            </footer>
+                          </li>
+                        ))
+                      }
                     </footer>
                   </article>
                 </li>
@@ -41,8 +50,8 @@ const Experience = () => {
             }
           )
         }
-    </ul>
-  </Section>
+      </ul>
+    </Section>
   )
 }
 
