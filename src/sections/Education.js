@@ -1,43 +1,27 @@
-import React from 'react'
-import Section from '../components/Section'
-import cv from '../resume.json'
-import './Education.css'
-
+import Section from '../components/Section';
+import cv from '../resume.json';
+import './Education.css';
 
 const Education = () => {
+  const formatDate = (date) => new Date(date).getFullYear();
 
-  const education = cv.education
   return (
-    <Section title='Education'>
-        <ul className='edu--ul'>
-          {
-            education?.map(({ institution, studyType, startDate, endDate, area }) => {
-              const startYear = new Date(startDate).getFullYear()
-              const endYear =
-                endDate != null ? new Date(endDate).getFullYear() : "Actual"
-              const years = `${startYear} - ${endYear}`
-
-              return (
-                <li className='edu--li'>
-                  <article>
-                    <header className='edu--header'>
-                      <div>
-                        <h3 className='edu--h3'>{institution}</h3>
-                      </div>
-                      <time className='edu--time'>{years}</time>
-                    </header>
-
-                    <footer>
-                      <p>{studyType} ~ {area}</p>
-                    </footer>
-                  </article>
-                </li>
-              )
-            })
-          }
-        </ul>  
+    <Section title="Education">
+      <div className="education-list">
+        {cv.education.map((edu, index) => (
+          <div key={index} className="education-item">
+            <div className="education-content">
+              <h3 className="education-institution">{edu.institution}</h3>
+              <p className="education-details">{edu.studyType} • {edu.area}</p>
+            </div>
+            <span className="education-date">
+              {formatDate(edu.startDate)} - {formatDate(edu.endDate)}
+            </span>
+          </div>
+        ))}
+      </div>
     </Section>
-  )
-}
+  );
+};
 
 export default Education

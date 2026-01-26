@@ -1,94 +1,58 @@
-import React from 'react'
-import cv from '../resume.json'
-import './Hero.css'
-import Section from '../components/Section'
-import LinkedIn from '../assets/icons/LinkedInIcon'
+import DownloadIcon from '../assets/icons/DownloadIcon'
+import { default as LinkedInIcon } from '../assets/icons/LinkedInIcon'
 import MailIcon from '../assets/icons/MailIcon'
 import PhoneIcon from '../assets/icons/PhoneIcon'
-import WorldMap from '../assets/icons/WorldMapIcon'
-import DownloadIcon from '../assets/icons/DownloadIcon'
+import MapIcon from '../assets/icons/WorldMapIcon'
+import Section from '../components/Section'
+import cv from '../resume.json'
+import './Hero.css'
 
 const Hero = () => {
   const basics = cv.basics
-  const profiles = cv.basics.profiles
-  const location = cv.basics.location
-
-  console.log(profiles ?? 'Hello')
-  const SOCIAL_ICONS = {
-    LinkedIn
-  }
-
+  // const profiles = cv.basics.profiles
+  // const location = cv.basics.location
+  const { name, label, image, email, phone, location, profiles } = basics;
+  const linkedIn = profiles.find(p => p.network === "LinkedIn");
   const linkedInInfo = profiles?.find(({ network }) => network === 'LinkedIn')
-  const linkedInUrl = linkedInInfo?.url
 
   return (
     <Section>
-      <div className='container'>
-        <div className='info'>
-          <h1 className='title-hero--main'>{basics.name}</h1>
-          <h2 className='title-hero--secondary'>{basics.label}</h2>
-          <span className='hero--span'>
-            <WorldMap></WorldMap>
-            {location.city}, {location.region}
-          </span>
-          <footer className='hero--footer print'>
-            {basics.email} ~ {basics.phone} ~ {linkedInUrl}
-          </footer>
-          <footer className='hero--footer no-print'>
-            {basics.phone && (
-              <a
-                href={`tel:${basics.phone}`}
-                title={`Call to ${basics.name} with number ${basics.phone}`}
-                target='_blank'
-                rel="noreferrer"
-              >
-                <PhoneIcon></PhoneIcon>
-              </a>
-            )}
-            {basics.email && (
-              <a
-                href={`mailto:${basics.email}`}
-                title={`Send an email to ${basics.name} to ${basics.email}`}
-                target='_blank'
-                rel="noreferrer"
-              >
-                <MailIcon />
-              </a>
-            )}
-            {
-              profiles?.map(({ id, network, url, username }) => {
-                const Icon = SOCIAL_ICONS[network]
-                return (
-                  <a
-                    key={id}
-                    href={url}
-                    title={`Visit profile of ${username} in ${url}`}
-                    target='_blank'
-                    rel="noreferrer"
-                  >
-                    <Icon />
-                  </a>
-                )
-              })
-            }
+      <div className="hero-container">
+        <div className="hero-info">
+          <h1 className="hero-name">{name}</h1>
+          <p className="hero-label">{label}</p>
 
-            <a
-              href="/resumeMabella.pdf"
-              title="Download my resume"
-              download
-              className="resume-download-link"
-              content
-            >
+          <div className="hero-location">
+            <MapIcon />
+            <span>{location.city}, {location.region}</span>
+          </div>
+
+          <div className="hero-contact-print">
+            {email} • {phone} • {linkedIn?.url}
+          </div>
+
+          <div className="hero-contact-screen">
+            <a href={`tel:${phone}`} className="contact-btn" title={`Call ${name}`}>
+              <PhoneIcon />
+            </a>
+            <a href={`mailto:${email}`} className="contact-btn" title={`Email ${name}`}>
+              <MailIcon />
+            </a>
+            <a href={linkedIn?.url} target="_blank" rel="noreferrer" className="contact-btn" title="LinkedIn Profile">
+              <LinkedInIcon />
+            </a>
+            <a href="/resumeMabella.pdf" download className="contact-btn contact-btn-primary" title="Download CV">
               <DownloadIcon />
             </a>
-          </footer>
+          </div>
         </div>
-        <figure>
-          <img src={basics.image} alt={basics.name} className='hero-img'></img>
-        </figure>
+
+        <div className="hero-image-container">
+          <img src={image} alt={name} className="hero-image" />
+        </div>
       </div>
     </Section>
-  )
-}
+  );
+};
 
 export default Hero

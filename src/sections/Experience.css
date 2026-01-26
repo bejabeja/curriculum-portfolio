@@ -1,48 +1,111 @@
-.experience-ul {
+.experience-list {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 1.5rem;
 }
 
-.experience--h3 {
-    margin: 0;
-    color: #111;
+.experience-item {
+    border-left: 4px solid #2563eb;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.experience--h4 {
-    color: #222;
-    font-weight: 400;
-    margin: 0;
-}
-
-.experience--header {
+.experience-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
 }
 
-.experience--header a {
-    color: #111;
+.experience-title-group {
+    flex: 1;
 }
 
-.experience--header a:hover {
+.experience-company {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 0.25rem 0;
+}
+
+.experience-link {
+    color: #111827;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.experience-link:hover {
+    color: #2563eb;
     text-decoration: underline;
 }
 
-.experience--time {
-    color: #555;
-    font-size: 0.85rem;
-    min-width: 102px;
-
+.experience-position {
+    color: #1f2937;
+    font-weight: 500;
+    margin: 0;
 }
 
-.experience--summary-list {
-    list-style-type: disc;
-    padding-left: 20px;
+.experience-date {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-@media (width <=700px) {
-    .experience--time {
-        text-align: right;
+.experience-summary {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem 0;
+}
+
+.experience-summary li {
+    font-size: 0.875rem;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.experience-summary li:before {
+    content: "•";
+    color: #2563eb;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.experience-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-badge-blue {
+    font-size: small;
+    padding: 4px 6px;
+    border-radius: 8px;
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .experience-date {
+        align-self: flex-start;
+    }
+}
+
+@media print {
+    .experience-item {
+        break-inside: avoid;
     }
 }

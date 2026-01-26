@@ -1,11 +1,25 @@
 .app {
-    padding: 4rem;
-    margin: auto;
-    width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background: #fff;
 }
 
-@media (width <= 700px) {
-    .app {
-      padding: 2rem;
-    }
+@media (max-width: 768px) {
+  .app {
+    padding: 2rem 1rem;
   }
+}
+
+@media print {
+  .app {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+
+.about-text {
+  color: #374151;
+  line-height: 1.7;
+  white-space: pre-line;
+}

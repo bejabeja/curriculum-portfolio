@@ -1,18 +1,19 @@
-import Section from "../components/Section"
-import cv from '../resume.json'
+import Section from "../components/Section";
+import cv from '../resume.json';
+import "./Languages.css";
 
-const Languages = () => {
-    return <Section title='Languages'>
-        <ul className='skills-ul'>
-            {
-                cv.languages.map(({ language, fluency }) => (
-                    <li className='skills-li'>
-                        {language} - {fluency}
-                    </li>
-                ))
-            }
-        </ul>
+const Languages = () => (
+    <Section title="Languages">
+        <div className="languages-list">
+            {cv.languages.map((lang, index) => (
+                <div key={index} className="language-item">
+                    <span className="language-name">{lang.language}</span>
+                    <span className="language-separator">•</span>
+                    <span className="language-fluency">{lang.fluency}</span>
+                </div>
+            ))}
+        </div>
     </Section>
-}
+);
 
 export default Languages

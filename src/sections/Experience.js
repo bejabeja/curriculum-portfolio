@@ -1,58 +1,48 @@
-import React from 'react'
-import Section from '../components/Section'
-import cv from '../resume.json'
-import './Experience.css'
+import LinkIcon from '../assets/icons/LinkIcon';
+import Section from '../components/Section';
+import cv from '../resume.json';
+import './Experience.css';
 
 const Experience = () => {
-  const work = cv.work
+  const formatDate = (date) => date ? new Date(date).getFullYear() : "Present";
+
   return (
     <Section title="Work Experience">
-      <ul className='experience-ul'>
-        {
-          work?.map(
-            ({ name, startDate, endDate, position, summary, url }) => {
-              const startYear = new Date(startDate).getFullYear()
-              const endYear =
-                endDate != null ? new Date(endDate).getFullYear() : "Actual"
-              const years = `${startYear} - ${endYear}`
+      <div className="experience-list">
+        {cv.work.map((job, index) => (
+          <div key={index} className="experience-item">
+            <div className="experience-header">
+              <div className="experience-title-group">
+                <h3 className="experience-company">
+                  <a href={job.url} target="_blank" rel="noreferrer" className="experience-link">
+                    {job.name}
+                    <LinkIcon />
+                  </a>
+                </h3>
+                <p className="experience-position">{job.position}</p>
+              </div>
+              <span className="experience-date">
+                {formatDate(job.startDate)} - {formatDate(job.endDate)}
+              </span>
+            </div>
 
-              return (
-                <li className='experience--li'>
-                  <article>
-                    <header className='experience--header'>
-                      <div>
-                        <h3 className='experience--h3'>
-                          <a href={url} title={`Ver ${name}`} target="_blank" rel="noreferrer">
-                            {name}
-                          </a>
-                        </h3>
-                        <h4 className='experience--h4'>{position}</h4>
-                      </div>
+            <ul className="experience-summary">
+              {job.summary.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
 
-                      <time className='experience--time'>{years}</time>
-                    </header>
-
-                    <footer className='experience--summary-list'>
-
-                      {
-                        summary.map((item, index) => (
-                          <li key={index}>
-                            <footer>
-                              <p className='paragraph-style'>{item}</p>
-                            </footer>
-                          </li>
-                        ))
-                      }
-                    </footer>
-                  </article>
-                </li>
-              )
-            }
-          )
-        }
-      </ul>
+            <div className="experience-highlights">
+              {job.highlights.map((skill, i) => (
+                <span key={i} className="skill-badge skill-badge-blue">{skill}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </Section>
-  )
-}
+  );
+};
+
 
 export default Experience

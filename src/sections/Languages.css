@@ -1,0 +1,25 @@
+.languages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.language-name {
+    font-weight: 500;
+    color: #111827;
+}
+
+.language-separator {
+    color: #6b7280;
+}
+
+.language-fluency {
+    font-size: 0.875rem;
+    color: #4b5563;
+}

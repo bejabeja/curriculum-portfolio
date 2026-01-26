@@ -1,22 +1,14 @@
-import React from 'react'
-import Section from '../components/Section'
-import cv from '../resume.json'
-import './Skills.css'
+import Section from '../components/Section';
+import cv from '../resume.json';
+import './Skills.css';
 
-const Skills = () => {
-  const skills = cv.skills
-  return (
-    <Section title='Skills'> 
-      <ul className='skills-ul'>
-        {skills?.map(({name})=> (
-          <li className='skills-li'>
-            {name}
-          </li>
-          ))
-        }
-      </ul>
-    </Section>
-  )
-}
-
+const Skills = () => (
+  <Section title="Skills">
+    <div className="skills-list">
+      {cv.skills.map((skill, index) => (
+        <span key={index} className="skill-badge">{skill}</span>
+      ))}
+    </div>
+  </Section>
+);
 export default Skills

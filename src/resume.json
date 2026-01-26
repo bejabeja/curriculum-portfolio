@@ -26,14 +26,12 @@
       "position": "Full Stack Developer",
       "url": "https://www.visaflow.app/",
       "startDate": "2025-08-01",
-      "endDate": "Present",
+      "endDate": "",
       "summary": [
         "Drive end-to-end development of core product features using Next.js",
         "Defined the long-term technical strategy for robust frontend and backend architecture",
         "Led major refactoring efforts and established engineering guidelines",
-        "Redesigned critical application parts to elevate user engagement",
-        "Programming tools: Next, TypeScript, Tailwind, Shadcn/ui, XataDB",
-        "Other Tools: PostHog, Vercel, Figma, Jira, Github"
+        "Redesigned critical application parts to elevate user engagement"
       ],
       "highlights": [
         "Next",
@@ -41,7 +39,8 @@
         "Tailwind",
         "Shadcn/ui",
         "XataDB",
-        "Git, GitHub",
+        "Git",
+        "GitHub",
         "Vercel",
         "Jira",
         "Figma"
@@ -58,8 +57,6 @@
         "Developed real estate websites with frontend and backend features",
         "Created RESTful APIs and managed databases",
         "Ensured all features were covered by tests.",
-        "Programming tools: React JS, CSS, PHP, SQL, RoR.",
-        "Testing tools: Jest, PHPUnit, RSpec.",
         "Applied Agile methodology: participated in sprint planning, daily, stand-ups, and retrospective meetings.",
         "Practiced TDD, testing strategies, hexagonal architecture, refactoring, pair programming, and clean code."
       ],
@@ -69,7 +66,8 @@
         "Symfony",
         "PHPUnit, Jest",
         "GraphQL",
-        "Git, GitHub",
+        "Git",
+        "GitHub",
         "Docker",
         "Jira",
         "Figma"

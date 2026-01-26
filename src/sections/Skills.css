@@ -1,17 +1,19 @@
-.skills-ul {
-    display: inline-flex;
-    gap: 8px;
+.skills-list {
+    display: flex;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.skills-li {
-    align-items: center;
-    background-color: #eee;
-    border-radius: 6px;
-    color: black;
-    display: flex;
-    font-size: 0.8rem;
+.skill-badge {
+    padding: 0.5rem 1rem;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-size: 0.875rem;
     font-weight: 500;
-    gap: 4px;
-    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.skill-badge:hover {
+    background-color: #e5e7eb;
 }

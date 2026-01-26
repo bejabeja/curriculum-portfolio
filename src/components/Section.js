@@ -1,13 +1,10 @@
-import React from 'react'
-import './Section.css'
+import './Section.css';
 
-const Section = ({title, children}) => {
-  return (
-    <section>
-        {title && <h2>{title}</h2>}
-        {children}
-    </section>
-  )
-}
+const Section = ({ title, children }) => (
+  <section className="section">
+    {title && <h2 className="section-title">{title}</h2>}
+    {children}
+  </section>
+);
 
 export default Section
