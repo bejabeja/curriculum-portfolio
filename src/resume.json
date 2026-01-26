@@ -1,18 +1,15 @@
 {
   "basics": {
     "name": "Miriam Abella",
-    "label": "Full STack Developer",
+    "label": "Software Developer",
     "image": "me.webp",
     "email": "miriam.abella211@gmail.com",
     "phone": "+41 77 285 68 26",
     "url": "miriamabella.dev",
-    "summary": "With three years of hands-on experience in full-stack development, I've been diving deep into creating user-friendly and efficient web applications that could scale.\n\nIn my previous role at Lifull Connect, I played a key role in designing and implementing robust and scalable applications. My technical expertise spans both front-end and back-end technologies, including React.js, PHP, HTML, CSS, Jest, PHPUnit, and SQL databases.\n\nI'm all about bringing that can-do attitude, being open to learning, and continually growing professionally.\n\nLooking forward to connecting with you soon!",
+    "summary": "With five years of hands-on experience in full-stack development, I've been diving deep into creating user-friendly and efficient web applications that could scale.\n\nIn my previous role at Lifull Connect, I played a key role in designing and implementing robust and scalable applications. My technical expertise spans both front-end and back-end technologies, including React.js, Typescript, Tailwind, PHP, HTML, CSS, Jest, PHPUnit, and SQL databases.\n\nI'm all about bringing that can-do attitude, being open to learning, and continually growing professionally.\n\nLooking forward to connecting with you soon!",
     "location": {
-      "address": "",
-      "postalCode": "8600",
-      "city": "Dübendorf",
-      "countryCode": "CH",
-      "region": "Zurich"
+      "city": "Prilly",
+      "region": "Lausanne"
     },
     "profiles": [
       {
@@ -24,6 +21,33 @@
   },
   "work": [
     {
+      "id": 3,
+      "name": "Visaflow",
+      "position": "Full Stack Developer",
+      "url": "https://www.visaflow.app/",
+      "startDate": "2025-08-01",
+      "endDate": "Present",
+      "summary": [
+        "Drive end-to-end development of core product features using Next.js",
+        "Defined the long-term technical strategy for robust frontend and backend architecture",
+        "Led major refactoring efforts and established engineering guidelines",
+        "Redesigned critical application parts to elevate user engagement",
+        "Programming tools: Next, TypeScript, Tailwind, Shadcn/ui, XataDB",
+        "Other Tools: PostHog, Vercel, Figma, Jira, Github"
+      ],
+      "highlights": [
+        "Next",
+        "TypeScript",
+        "Tailwind",
+        "Shadcn/ui",
+        "XataDB",
+        "Git, GitHub",
+        "Vercel",
+        "Jira",
+        "Figma"
+      ]
+    },
+    {
       "id": 2,
       "name": "Lifull Connect",
       "position": "Full Stack Developer",
@@ -31,10 +55,8 @@
       "startDate": "2020-01-01",
       "endDate": "2023-07-30",
       "summary": [
-        "Developed the company's real estate websites. Styled and programmed frontend features.",
-        "Designed and implemented backend features.",
-        "Created RESTful APIs.",
-        "Managed databases.",
+        "Developed real estate websites with frontend and backend features",
+        "Created RESTful APIs and managed databases",
         "Ensured all features were covered by tests.",
         "Programming tools: React JS, CSS, PHP, SQL, RoR.",
         "Testing tools: Jest, PHPUnit, RSpec.",
@@ -42,7 +64,7 @@
         "Practiced TDD, testing strategies, hexagonal architecture, refactoring, pair programming, and clean code."
       ],
       "highlights": [
-        "Reactjs",
+        "React",
         "PHP",
         "Symfony",
         "PHPUnit, Jest",
@@ -54,20 +76,17 @@
       ]
     },
     {
-      "id": 1,
       "name": "Seidor",
       "position": "Unity Developer",
       "url": "https://www.seidor.com/",
       "startDate": "2017-02-01",
       "endDate": "2018-02-28",
       "summary": [
-        "My primary responsibility entailed the development of the VR application canvas, ensuring its seamless integration and functionality within the virtual environment.",
-        "Developed Unity 3D applications in C#.",
-        "Designed and implemented Canvas UI.",
+        "Developed VR applications in Unity 3D with C#",
+        "Designed and implemented Canvas UI",
         "Programmed UI interactions.",
         "Conducted manual testing of VR apps.",
-        "Reported and documented bugs.",
-        "Quickly understood and adapted to new tools and frameworks, demonstrating strong learning ability."
+        "Reported and documented bugs."
       ],
       "highlights": [
         "Unity",
@@ -80,7 +99,7 @@
   "education": [
     {
       "institution": "UOC - Universitat Oberta Catalunya",
-      "url": "https://fundacionesplai.org/",
+      "url": "https://www.uoc.edu/en",
       "area": "Web Apps Programming",
       "studyType": "Master Degree",
       "startDate": "2022-10-01",
@@ -112,100 +131,31 @@
     }
   ],
   "skills": [
-    {
-      "name": "Reactjs",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
-    },
-    {
-      "name": "Node",
-      "keywords": [
-        "Web development",
-        "Backend",
-        "Fullstack",
-        "Server-side JavaScript"
-      ]
-    },
-    {
-      "name": "PHP",
-      "keywords": [
-        "Web development",
-        "Backend",
-        "Fullstack",
-        "Server-side scripting"
-      ]
-    },
-    {
-      "name": "HTML",
-      "keywords": [
-        "Web development",
-        "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "keywords": [
-        "Bases de Datos",
-        "SQL",
-        "Database",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "keywords": [
-        "Version control",
-        "Colaboración",
-        "Source code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "keywords": [
-        "Version control",
-        "Collaboration",
-        "Source code",
-        "Git"
-      ]
-    },
-    {
-      "name": "GraphQL",
-      "keywords": [
-        "API development",
-        "Query language",
-        "Schema definition"
-      ]
-    }
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Node",
+    "Next.js",
+    "PHP",
+    "HTML",
+    "CSS",
+    "Tailwind",
+    "MySQL",
+    "Git",
+    "GitHub",
+    "GraphQL",
+    "Docker",
+    "Unity",
+    "C#"
   ],
   "languages": [
     {
       "language": "Spanish",
-      "fluency": "Native speaker"
+      "fluency": "Native"
     },
     {
       "language": "Catalan",
-      "fluency": "Native Speaker"
+      "fluency": "Native"
     },
     {
       "language": "English",
