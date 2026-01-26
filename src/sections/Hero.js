@@ -41,7 +41,7 @@ const Hero = () => {
             <a href={linkedIn?.url} target="_blank" rel="noreferrer" className="contact-btn" title="LinkedIn Profile">
               <LinkedInIcon />
             </a>
-            <a href="/resumeMabella.pdf" download className="contact-btn contact-btn-primary" title="Download CV">
+            <a href="/MAbella_Resume.pdf" download className="contact-btn contact-btn-primary" title="Download CV">
               <DownloadIcon />
             </a>
           </div>
