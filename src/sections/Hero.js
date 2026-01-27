@@ -13,7 +13,6 @@ const Hero = () => {
   // const location = cv.basics.location
   const { name, label, image, email, phone, location, profiles } = basics;
   const linkedIn = profiles.find(p => p.network === "LinkedIn");
-  const linkedInInfo = profiles?.find(({ network }) => network === 'LinkedIn')
 
   return (
     <Section>
