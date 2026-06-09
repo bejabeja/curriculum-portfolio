@@ -1,4 +1,5 @@
 import DownloadIcon from '../assets/icons/DownloadIcon'
+import LinkIcon from '../assets/icons/LinkIcon'
 import { default as LinkedInIcon } from '../assets/icons/LinkedInIcon'
 import MailIcon from '../assets/icons/MailIcon'
 import PhoneIcon from '../assets/icons/PhoneIcon'
@@ -11,7 +12,7 @@ const Hero = () => {
   const basics = cv.basics
   // const profiles = cv.basics.profiles
   // const location = cv.basics.location
-  const { name, label, image, email, phone, location, profiles } = basics;
+  const { name, label, image, email, phone, url, location, profiles } = basics;
   const linkedIn = profiles.find(p => p.network === "LinkedIn");
 
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
           </div>
 
           <div className="hero-contact-print">
-            {email} • {phone} • {linkedIn?.url}
+            {email} • {phone} • {linkedIn?.url} • {url}
           </div>
 
           <div className="hero-contact-screen">
@@ -39,6 +40,9 @@ const Hero = () => {
             </a>
             <a href={linkedIn?.url} target="_blank" rel="noreferrer" className="contact-btn" title="LinkedIn Profile">
               <LinkedInIcon />
+            </a>
+            <a href={`https://${url}`} target="_blank" rel="noreferrer" className="contact-btn" title="Portfolio Website">
+              <LinkIcon />
             </a>
             <a href="/MAbella_Resume.pdf" download className="contact-btn contact-btn-primary" title="Download CV">
               <DownloadIcon />

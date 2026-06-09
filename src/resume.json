@@ -1,15 +1,15 @@
 {
   "basics": {
     "name": "Miriam Abella",
-    "label": "Software Developer",
+    "label": "Senior Software Developer",
     "image": "me.webp",
     "email": "miriam.abella211@gmail.com",
     "phone": "+41 77 285 68 26",
-    "url": "miriamabella.dev",
-    "summary": "With five years of hands-on experience in full-stack development, I've been diving deep into creating user-friendly and efficient web applications that could scale.\n\nIn my previous role at Lifull Connect, I played a key role in designing and implementing robust and scalable applications. My technical expertise spans both front-end and back-end technologies, including React.js, Typescript, Tailwind, PHP, HTML, CSS, Jest, PHPUnit, and SQL databases.\n\nI'm all about bringing that can-do attitude, being open to learning, and continually growing professionally.\n\nLooking forward to connecting with you soon!",
+    "url": "mabella.dev",
+    "summary": "Software Developer with 5+ years of experience building high-quality web applications, RESTful APIs, and scalable frontend and backend systems. Specialized in React, TypeScript, and Clean Architecture principles, with a strong background in Test-Driven Development (TDD), CI/CD pipelines, and Agile workflows. Experienced in leading technical initiatives, driving architecture decisions, and mentoring within small teams. Passionate about product thinking, clean code, maintainable systems, and delivering real business value.",
     "location": {
-      "city": "Prilly",
-      "region": "Lausanne"
+      "city": "Lausanne",
+      "region": "Switzerland"
     },
     "profiles": [
       {
@@ -23,27 +23,32 @@
     {
       "id": 3,
       "name": "Visaflow",
-      "position": "Full Stack Developer",
+      "position": "Senior Software Developer",
       "url": "https://www.visaflow.app/",
       "startDate": "2025-08-01",
       "endDate": "",
       "summary": [
-        "Drive end-to-end development of core product features using Next.js",
-        "Defined the long-term technical strategy for robust frontend and backend architecture",
-        "Led major refactoring efforts and established engineering guidelines",
-        "Redesigned critical application parts to elevate user engagement"
+        "Led the full frontend architecture redesign, defining technical guidelines, component structure, and long-term maintainability strategy for a React/TypeScript codebase.",
+        "Designed and prototyped the new application UI in Figma, ensuring responsive, accessible, and engagement-optimized layouts aligned with product goals.",
+        "Drove backend refactoring initiatives to improve scalability, separation of concerns, and clean architecture adherence across the platform.",
+        "Owned key technical decisions in a small cross-functional team, bridging design, backend, and frontend concerns from requirements to production.",
+        "Established code review practices, coding standards, and CI/CD workflow improvements to raise overall engineering quality.",
+        "Preparing and driving monthly learning sessions for junior developers on topics including Trunk-Based Development, Clean Code, and Agile methodologies."
       ],
       "highlights": [
-        "Next",
+        "React",
         "TypeScript",
+        "Next.js",
+        "Figma",
+        "Node.js",
         "Tailwind",
         "Shadcn/ui",
-        "XataDB",
         "Git",
         "GitHub",
-        "Vercel",
+        "Docker",
         "Jira",
-        "Figma"
+        "Vercel",
+        "Supabase"
       ]
     },
     {
@@ -54,40 +59,42 @@
       "startDate": "2020-01-01",
       "endDate": "2023-07-30",
       "summary": [
-        "Developed real estate websites with frontend and backend features",
-        "Created RESTful APIs and managed databases",
-        "Ensured all features were covered by tests.",
-        "Applied Agile methodology: participated in sprint planning, daily, stand-ups, and retrospective meetings.",
-        "Practiced TDD, testing strategies, hexagonal architecture, refactoring, pair programming, and clean code."
+        "Developed and maintained real estate web applications used by thousands of users, contributing to both frontend (React, TypeScript, HTML, CSS) and backend (PHP, Ruby on Rails, Node.js) layers.",
+        "Designed and implemented RESTful APIs and managed relational databases (MySQL, PostgreSQL), ensuring performance and data integrity.",
+        "Test-Driven Development using PHPUnit, RSpec, and Jest; authored and maintained automated test suites that significantly reduced regression bugs.",
+        "Applied Clean Code principles and hexagonal architecture patterns, improving codebase readability and long-term maintainability.",
+        "Contributed to CI/CD pipeline management, supporting continuous integration and deployment practices using Git-based workflows.",
+        "Actively participated in Agile ceremonies including sprint planning, daily stand-ups, and retrospectives within a collaborative engineering team."
       ],
       "highlights": [
         "React",
+        "TypeScript",
         "PHP",
-        "Symfony",
-        "PHPUnit, Jest",
-        "GraphQL",
-        "Git",
-        "GitHub",
+        "Ruby on Rails",
+        "Node.js",
+        "MySQL",
+        "PostgreSQL",
+        "Jest",
+        "PHPUnit",
+        "RSpec",
         "Docker",
-        "Jira",
-        "Figma"
+        "Git"
       ]
     },
     {
-      "name": "Seidor",
+      "id": 1,
+      "name": "Seidor S.L.",
       "position": "Unity Developer",
       "url": "https://www.seidor.com/",
       "startDate": "2017-02-01",
       "endDate": "2018-02-28",
       "summary": [
-        "Developed VR applications in Unity 3D with C#",
-        "Designed and implemented Canvas UI",
-        "Programmed UI interactions.",
-        "Conducted manual testing of VR apps.",
-        "Reported and documented bugs."
+        "Built Unity 3D applications in C#, designing UI interactions and immersive environments for enterprise VR solutions.",
+        "Conducted manual testing of VR applications, identifying and resolving defects that measurably reduced reported bug counts.",
+        "Researched and adopted new tools and frameworks, improving overall team delivery efficiency."
       ],
       "highlights": [
-        "Unity",
+        "Unity 3D",
         "C#",
         "Canvas Design",
         "After Effects"
@@ -98,53 +105,47 @@
     {
       "institution": "UOC - Universitat Oberta Catalunya",
       "url": "https://www.uoc.edu/en",
-      "area": "Web Apps Programming",
-      "studyType": "Master Degree",
-      "startDate": "2022-10-01",
-      "endDate": "2024-12-25"
+      "area": "Web Application Development",
+      "studyType": "Master's Degree",
+      "startDate": "2023-09-01",
+      "endDate": "2025-06-01"
     },
     {
-      "institution": "Fundacio Esplai",
-      "url": "https://fundacionesplai.org/",
-      "area": "Web Programming",
-      "studyType": "Bootcamp",
-      "startDate": "2019-10-01",
-      "endDate": "2019-12-25"
-    },
-    {
-      "institution": "TEKNOS",
+      "institution": "TEKNOS VIC",
       "url": "https://mon.uvic.cat/teknos/",
-      "area": "3D Animations and Interactive Web",
-      "studyType": "Higher Technical Certificate",
+      "area": "3D Animation, Videogames and Interactive Environments",
+      "studyType": "Technical Degree",
       "startDate": "2015-09-01",
       "endDate": "2017-06-01"
     },
     {
-      "institution": "University of Vic",
+      "institution": "University of Vic (UVic)",
       "url": "https://www.uvic.cat/es",
       "area": "Audiovisual Communication",
-      "studyType": "Bachelor Degree",
+      "studyType": "Bachelor's Degree",
       "startDate": "2010-09-01",
       "endDate": "2015-06-01"
     }
   ],
   "skills": [
     "React",
-    "JavaScript",
     "TypeScript",
-    "Node",
+    "JavaScript",
     "Next.js",
+    "Node.js",
     "PHP",
-    "HTML",
-    "CSS",
-    "Tailwind",
+    "Ruby on Rails",
+    "HTML5",
+    "CSS3",
     "MySQL",
+    "PostgreSQL",
+    "Jest",
+    "PHPUnit",
+    "RSpec",
     "Git",
-    "GitHub",
-    "GraphQL",
     "Docker",
-    "Unity",
-    "C#"
+    "Figma",
+    "Unity 3D"
   ],
   "languages": [
     {
@@ -158,6 +159,10 @@
     {
       "language": "English",
       "fluency": "Professional"
+    },
+    {
+      "language": "German",
+      "fluency": "Basic"
     }
   ]
 }
