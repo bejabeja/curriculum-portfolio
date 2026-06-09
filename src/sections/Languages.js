@@ -8,7 +8,7 @@ const Languages = () => (
             {cv.languages.map((lang, index) => (
                 <div key={index} className="language-item">
                     <span className="language-name">{lang.language}</span>
-                    <span className="language-separator">•</span>
+                    <span className="language-separator" aria-hidden="true">•</span>
                     <span className="language-fluency">{lang.fluency}</span>
                 </div>
             ))}

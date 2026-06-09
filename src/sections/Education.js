@@ -12,7 +12,7 @@ const Education = () => {
           <div key={index} className="education-item">
             <div className="education-content">
               <h3 className="education-institution">{edu.institution}</h3>
-              <p className="education-details">{edu.studyType} • {edu.area}</p>
+              <p className="education-details">{edu.studyType}<span aria-hidden="true"> • </span>{edu.area}</p>
             </div>
             <span className="education-date">
               {formatDate(edu.startDate)} - {formatDate(edu.endDate)}

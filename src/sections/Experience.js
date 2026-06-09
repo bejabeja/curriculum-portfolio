@@ -14,9 +14,9 @@ const Experience = () => {
             <div className="experience-header">
               <div className="experience-title-group">
                 <h3 className="experience-company">
-                  <a href={job.url} target="_blank" rel="noreferrer" className="experience-link">
+                  <a href={job.url} target="_blank" rel="noreferrer" className="experience-link" aria-label={`${job.name}, opens in new tab`}>
                     {job.name}
-                    <LinkIcon />
+                    <LinkIcon aria-hidden="true" />
                   </a>
                 </h3>
                 <p className="experience-position">{job.position}</p>

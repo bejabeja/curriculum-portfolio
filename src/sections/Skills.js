@@ -4,11 +4,11 @@ import './Skills.css';
 
 const Skills = () => (
   <Section title="Skills">
-    <div className="skills-list">
+    <ul className="skills-list" aria-label="Technical skills">
       {cv.skills.map((skill, index) => (
-        <span key={index} className="skill-badge">{skill}</span>
+        <li key={index} className="skill-badge">{skill}</li>
       ))}
-    </div>
+    </ul>
   </Section>
 );
 export default Skills

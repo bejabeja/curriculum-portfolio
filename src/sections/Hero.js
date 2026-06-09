@@ -9,10 +9,7 @@ import cv from '../resume.json'
 import './Hero.css'
 
 const Hero = () => {
-  const basics = cv.basics
-  // const profiles = cv.basics.profiles
-  // const location = cv.basics.location
-  const { name, label, image, email, phone, url, location, profiles } = basics;
+  const { name, label, image, email, phone, url, location, profiles } = cv.basics;
   const linkedIn = profiles.find(p => p.network === "LinkedIn");
 
   return (
@@ -31,21 +28,21 @@ const Hero = () => {
             {email} • {phone} • {linkedIn?.url} • {url}
           </div>
 
-          <div className="hero-contact-screen">
-            <a href={`tel:${phone}`} className="contact-btn" title={`Call ${name}`}>
-              <PhoneIcon />
+          <div className="hero-contact-screen" role="navigation" aria-label="Contact links">
+            <a href={`tel:${phone}`} className="contact-btn" title={`Call ${name}`} aria-label={`Call ${name}`}>
+              <PhoneIcon aria-hidden="true" />
             </a>
-            <a href={`mailto:${email}`} className="contact-btn" title={`Email ${name}`}>
-              <MailIcon />
+            <a href={`mailto:${email}`} className="contact-btn" title={`Email ${name}`} aria-label={`Email ${name}`}>
+              <MailIcon aria-hidden="true" />
             </a>
-            <a href={linkedIn?.url} target="_blank" rel="noreferrer" className="contact-btn" title="LinkedIn Profile">
-              <LinkedInIcon />
+            <a href={linkedIn?.url} target="_blank" rel="noreferrer" className="contact-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+              <LinkedInIcon aria-hidden="true" />
             </a>
-            <a href={`https://${url}`} target="_blank" rel="noreferrer" className="contact-btn" title="Portfolio Website">
-              <LinkIcon />
+            <a href={`https://${url}`} target="_blank" rel="noreferrer" className="contact-btn" title="Portfolio Website" aria-label="Portfolio Website">
+              <LinkIcon aria-hidden="true" />
             </a>
-            <a href="/MAbella_Resume.pdf" download className="contact-btn contact-btn-primary" title="Download CV">
-              <DownloadIcon />
+            <a href="/MAbella_Resume.pdf" download className="contact-btn contact-btn-primary" title="Download CV" aria-label="Download CV">
+              <DownloadIcon aria-hidden="true" />
             </a>
           </div>
         </div>
