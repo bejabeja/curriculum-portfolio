@@ -2,12 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .skill-badge {
     padding: 0.5rem 1rem;
-    background-color: #f3f4f6;
-    color: #1f2937;
+    background-color: var(--color-surface);
+    color: var(--color-text-secondary);
     font-size: 0.875rem;
     font-weight: 500;
     border-radius: 0.5rem;
@@ -15,5 +18,5 @@
 }
 
 .skill-badge:hover {
-    background-color: #e5e7eb;
+    background-color: var(--color-border);
 }

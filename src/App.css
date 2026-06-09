@@ -2,7 +2,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
-  background: #fff;
+  background: var(--color-bg);
 }
 
 @media (max-width: 768px) {
@@ -19,7 +19,7 @@
 }
 
 .about-text {
-  color: #374151;
+  color: var(--color-text-body);
   line-height: 1.7;
   white-space: pre-line;
 }

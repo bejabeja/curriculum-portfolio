@@ -9,8 +9,8 @@ const Experience = () => {
   return (
     <Section title="Work Experience">
       <div className="experience-list">
-        {cv.work.map((job, index) => (
-          <div key={index} className="experience-item">
+        {cv.work.map((job) => (
+          <div key={job.name} className="experience-item">
             <div className="experience-header">
               <div className="experience-title-group">
                 <h3 className="experience-company">

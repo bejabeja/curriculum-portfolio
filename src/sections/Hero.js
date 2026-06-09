@@ -1,6 +1,6 @@
 import DownloadIcon from '../assets/icons/DownloadIcon'
 import LinkIcon from '../assets/icons/LinkIcon'
-import { default as LinkedInIcon } from '../assets/icons/LinkedInIcon'
+import LinkedInIcon from '../assets/icons/LinkedInIcon'
 import MailIcon from '../assets/icons/MailIcon'
 import PhoneIcon from '../assets/icons/PhoneIcon'
 import MapIcon from '../assets/icons/WorldMapIcon'

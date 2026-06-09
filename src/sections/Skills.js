@@ -6,7 +6,7 @@ const Skills = () => (
   <Section title="Skills">
     <ul className="skills-list" aria-label="Technical skills">
       {cv.skills.map((skill, index) => (
-        <li key={index} className="skill-badge">{skill}</li>
+        <li key={skill} className="skill-badge">{skill}</li>
       ))}
     </ul>
   </Section>

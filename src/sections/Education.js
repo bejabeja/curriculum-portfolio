@@ -8,8 +8,8 @@ const Education = () => {
   return (
     <Section title="Education">
       <div className="education-list">
-        {cv.education.map((edu, index) => (
-          <div key={index} className="education-item">
+        {cv.education.map((edu) => (
+          <div key={edu.institution} className="education-item">
             <div className="education-content">
               <h3 className="education-institution">{edu.institution}</h3>
               <p className="education-details">{edu.studyType}<span aria-hidden="true"> • </span>{edu.area}</p>
