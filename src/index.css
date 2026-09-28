@@ -56,6 +56,16 @@ p {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   body {
     font-size: 12pt;
   }

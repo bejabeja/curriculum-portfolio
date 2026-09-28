@@ -1,6 +1,7 @@
-const GithubIcon = () => {
+const GithubIcon = (props) => {
   return (
     <svg
+        {...props}
         width="16"
         height="16"
         viewBox="0 0 24 24"

@@ -6,7 +6,7 @@
     "email": "miriam.abella211@gmail.com",
     "phone": "+41 77 285 68 26",
     "url": "mabella.dev",
-    "summary": "Software Developer with 5+ years of experience building high-quality web applications, RESTful APIs, and scalable frontend and backend systems. Specialized in React, TypeScript, and Clean Architecture principles, with a strong background in Test-Driven Development (TDD), CI/CD pipelines, and Agile workflows. Experienced in leading technical initiatives, driving architecture decisions, and mentoring within small teams. Passionate about product thinking, clean code, maintainable systems, and delivering real business value.",
+    "summary": "Software Developer with 6+ years of experience building high-quality web applications, RESTful APIs, and scalable frontend and backend systems. Specialized in React, TypeScript, and Clean Architecture principles, with a strong background in Test-Driven Development (TDD), CI/CD pipelines, and Agile workflows. Experienced in leading technical initiatives, driving architecture decisions, and mentoring within small teams. Passionate about product thinking, clean code, maintainable systems, and delivering real business value.",
     "location": {
       "city": "Lausanne",
       "region": "Switzerland"
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "name": "Visaflow",
-      "position": "Senior Software Developer",
+      "position": "Tech Lead B2B | Senior Full Stack Developer",
       "url": "https://www.visaflow.app/",
       "startDate": "2025-08-01",
       "endDate": "",
